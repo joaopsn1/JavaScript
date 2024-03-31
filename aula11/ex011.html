@@ -18,8 +18,8 @@
             var txtp = window.document.getElementById('txtpais')
             var res = window.document.getElementById('res')
             
-            res.innerHTML = `Você nasceu no(a) ${txtp}`
-            if (res = 'Brasil') {
+            res.innerHTML = `<p>Você nasceu no(a) <strong>${txtp.value}</strong></p>`
+            if (txtp == 'Brasil') {
                 res.innerHTML += `<p>Você é <strong>BRASILEIRO!</strong></p>`
             } else {
                 res.innerHTML += `<p>Você é <strong>ESTRANGEIRO!</strong></p>`
